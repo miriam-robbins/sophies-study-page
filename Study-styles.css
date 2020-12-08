@@ -1,0 +1,147 @@
+/* stylesheet for Sophie's Study Site */
+* {    /* clears out browser defaults */
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body {  /* can change this */
+  color: #5D6063;
+  background-color:   /* #EAEDF0;  use my color: #FFCD69;*/ #fcd488;
+                       /* nice background colors:  #CAFACA  and #C0FEFE are nice light greens
+                                                  #D6E9FE and #B2D6FF light blues
+                      */
+
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 10px;
+  line-height: 1.3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h2{
+  font-size: 2em;
+}
+.btn{
+  font-size: 10px;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section {
+  background-color: #D6E9FE;
+  width: 20%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1.5em;
+  min-width: 12em;
+}
+
+.modal-header, .modal-footer {
+  background-color: #22AA88;
+  color: white;
+}
+.modal-body{
+  background-color: #CAFACA;
+  color: #441144;
+}
+.menu {
+  background-color: #5995DA;
+  height: 80px;
+}
+
+/* .header {
+  background-color: #B2D6FF;
+  height: auto;
+  justify-content: inherit;
+  align-items: inherit;
+}*/
+
+
+.study-site-header{
+  text-align:  center;
+  background-color: #83B8E1;   /* #66D7D8;*/
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 30px 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  padding: 15px;
+}
+.id-photo{
+  height: 50%;
+}
+.photo img ,  .id-photo img {
+  width: 100%;
+  max-height: 150px;
+}
+/* course list */
+.course-list{
+  justify-content: flex-start;
+}
+.course-list li{
+  margin-top: 10px;
+}
+/* Tablet Styles */
+@media only screen and (min-width: 426px) {
+body , .btn {
+    font-size: 16px;
+}
+  .study-site-header{
+    flex-direction: row;
+  /*  max-height: 300px;
+  *  width: 80%;
+    margin: 30px 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  */
+  }
+  .header-text {
+    /* justify-content: center;
+    align-items: center;
+    padding: 15px;  */
+    width: 50%;
+  }
+  .id-photo{
+    width: 50%;
+  }
+  .id-photo img{
+    max-height: 360px;
+  }
+}     /* media tablet size and larger */
+
+      /* very large media (wide screens) */
+@media only screen and (min-width: 1400px) {
+  body, .btn {
+    font-size: 20px;
+  }
+  .id-photo img{
+    max-height: 600px;
+  }
+}     /* very large media  */
+
+
+/* from modal code source to make autofocus attribute work */
+/* $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+}) */

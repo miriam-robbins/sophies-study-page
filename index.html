@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+              <!-- My Testing incorporation of Bootstrap.
+                  Site to be a student's study site 
+	      		Draft 1  Dec. 7, 2020 -->
+<html  lang= 'en'>
+  <head>
+    <meta charset= 'UTF-8'/>
+    <meta name= 'viewport'
+      content= 'width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <title> Sophie's Study Site </title>
+
+<!-- from bootstrap v4.5.3  to include bootstrap code in my file  more files at end of body -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- done bootstrap  -->
+
+    <link rel='stylesheet' href='Study-styles.css'/>
+
+  </head>
+  <body>
+    <header class='study-site-header'>
+      <div class ='id-photo' >
+          <img src='Sophie-9-2019.jpg'/>
+      </div>
+      <div class='header-text'> <h2> Sophie's Study Site </h2>
+            <h2> Fall-Winter 2020-2021 </h2> </div>
+    </header>
+
+    <div class = 'page'>
+      <section>  <!--  current courses section  -->
+        <div class = 'course-list'>
+          <h4> Sophie's Courses: </h4>
+          <ul class = 'button-list'>
+            <li>   <!--  modal 1   History -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#HistoryModal1">
+                History  </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="HistoryModal1" tabindex="-1" aria-labelledby="HistoryModalLabel1" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="HistoryModalLabel1">History</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true"> &times; </span>
+                        </button>
+                      </div>  <!-- "modal header"  -->
+                      <div class="modal-body">
+                        <p>Class: Mon. and Wed. 9:00-10:20 </p>
+
+                        <p> <strong> Teacher: </strong>
+
+                          <a tabindex="0" class="btn btn-light" role="button" data-trigger="focus" data-container="body"  data-toggle="popover" data-html="true" title="History Teacher" data-content="<img src='Ginsberg-150.jpg'/>">Mrs. Ginsberg</a>
+
+                        </p>
+                        <p> Office Hours:  Mon. and Wed. 10:30-12:00 </p>
+                        <p> email: ginsberg.history@someschool.edu </p>
+                        <hr/>
+
+                        <p> <strong>Teacher's Assistant: </strong>
+                          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover" data-trigger="focus" data-container="body" title="Teacher's Assistant for History" data-html="true" data-content="N. Chanting loves History and will help you learn to love it too. <img src='NChanting-150.jpg'/> Just wait and see!">N. Chanting</a>
+                          has hours </p>
+                          <p>Mon. - Thu. 16:00-17:30.</p>
+                          <p> email: nchanting.history@someschool.edu </p>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" >Edit</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>  <!-- modal  1 --> </li>
+            <li> <!-- Button trigger modal  2 Sports  -->
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+                Sports</button>
+
+                <!-- Modal  2 -->
+                <div  class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Horseback Riding 101</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Class: Tue. and Thu. 14:00-14:40 </p>
+
+                        <p> <strong> Teacher: </strong>
+                          <a tabindex="0" class="btn btn-light" role="button" data-trigger="focus" data-container="body"  data-toggle="popover" data-html="true" title="Horseback Riding Instructor" data-content="<img src='horsehead-150.jpg'/>">Mr. Ed</a>
+
+                        </p>
+                        <p> Office Hours:  Mon. - Thu. 8:30-9:00 </p>
+                        <p> email: ed.sports@someschool.edu </p>
+                        <hr/>
+
+                        <p> <strong>Teacher's Assistant: </strong>
+                          <a tabindex="0" class="btn btn-light" role="button" data-toggle="popover" data-trigger="focus" data-container="body" title="Teacher's Assistant for Horseback Riding" data-html="true" data-content="Hi Ho Silver, AWAY!! <img src='hihosilver-150.jpg'/> ">C. Silver</a>
+                          has hours </p>
+                        <p>Mon. - Thu. 15:00-17:00.</p>
+                        <p> email: stablegirl.sports@someschool.edu </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" >Edit</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> <!-- modal 2 --> </li>    <!-- 2 -->
+                <li>  smile 1 </li>
+                <li>  smile 2 </li>
+          </ul>
+        </div>     <!-- 'course-list'  -->
+      </section>
+      <section>  <!--   schedule  section  -->
+        <p> schedule section </p>
+      </section>
+      <section>  <!--     section  -->
+      <p> a section </p>
+      </section>
+    </div>     <!-- class = 'page' -->
+
+    <!--  Source code from Bootstrap: 
+   -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <!-- done bootstrap  -->
+<script>
+/* to initialize popovers ? */
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+</script>
+  </body>
+</html>
