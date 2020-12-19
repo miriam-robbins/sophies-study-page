@@ -5,22 +5,60 @@
     box-sizing:border-box;
 }
 
-
+/* start with source for small divices */
 body {  /* can change this */
   color: #5D6063;
-  background-color:   /* #EAEDF0;  use my color: #FFCD69;*/ #fcd488;
-                       /* nice background colors:  #CAFACA  and #C0FEFE are nice light greens
-                                                  #D6E9FE and #B2D6FF light blues
-                      */
+
+  /* yellow-orange with gradient */
+      background: #F3AAAA; /* Old browsers */
+      background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+      background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+
+
+
 
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 10px;
-  line-height: 1.3;
+  line-height: 1.3;/* yellow-orange with gradient */
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.nice-background{
+/* yellow-orange with gradient */
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+
+/* red gradient  - test */
+background: #C655BE; /* Old browsers */
+background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+
+}
+
 h2{
   font-size: 2em;
 }
@@ -36,7 +74,7 @@ h2{
 }
 
 section {
-  background-color: #D6E9FE;
+  background-color: /* #D6E9FE; */ #abe6f5;
   width: 20%;
   height: auto;
   display: flex;
@@ -45,6 +83,7 @@ section {
   text-align: center;
   margin: 1.5em;
   min-width: 12em;
+  border-radius: 15px;
 }
 
 .modal-header, .modal-footer {
@@ -60,12 +99,6 @@ section {
   height: 80px;
 }
 
-/* .header {
-  background-color: #B2D6FF;
-  height: auto;
-  justify-content: inherit;
-  align-items: inherit;
-}*/
 
 
 .study-site-header{
@@ -92,7 +125,12 @@ section {
 }
 .photo img ,  .id-photo img {
   width: 100%;
-  max-height: 150px;
+  max-height: 100px;
+}
+
+/* list of buttons */
+.button-list{
+  list-style-type: none;
 }
 /* course list */
 .course-list{
@@ -126,22 +164,18 @@ body , .btn {
     width: 50%;
   }
   .id-photo img{
-    max-height: 360px;
+    max-height: 240px;
+    max-width: 320px;
   }
 }     /* media tablet size and larger */
 
       /* very large media (wide screens) */
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1600px) {
   body, .btn {
     font-size: 20px;
   }
   .id-photo img{
-    max-height: 600px;
+    max-height: 720px;
+    max-width: 960px;
   }
 }     /* very large media  */
-
-
-/* from modal code source to make autofocus attribute work */
-/* $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-}) */
