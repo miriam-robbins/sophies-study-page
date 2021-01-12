@@ -122,6 +122,7 @@ section {
 }
 .id-photo{
   height: 50%;
+  max-width: 50%;
 }
 .photo img ,  .id-photo img {
   width: 100%;
